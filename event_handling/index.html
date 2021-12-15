@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <form>
+            <p>
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" v-model="nom"/>
+            </p>
+            <p>
+                <label for="Message">Message</label>
+                <input type="text" name="message" v-model="message"/>
+            </p>
+            <button @click="onClick" type="button">Enregistrer</button>
+        </form>
+        
+        <a @mouseover.prevent="showAlert" href="https://www.google.fr">Aller sur google</a>
+        
+      
+    </div>
+    
+    
+    
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

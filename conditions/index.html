@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+    <div id="app">
+        <form>
+            <p>
+                <label for="age">Age</label>
+                <input type="text" name="age" v-model="age"/>
+            </p>
+           
+        </form>
+        
+          <p v-if="age>=18">
+              Vous êtes majeur, bravo !
+          </p>
+          <p v-else-if="age>=2">
+              Retourne dans ta chambre
+          </p>
+          <p v-else>
+              Retourne dans ton berceau
+          </p>
+          
+          <ul>
+              <li v-for="pri of prix" v-if="pri >= 30" class="red">{{ pri }} €</li>
+              <li v-else class="green">{{ pri }} €</li>
+          </ul>
+        
+    </div>
+    
+    
+    
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

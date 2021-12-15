@@ -1,0 +1,13 @@
+ul{
+    list-style-type:none;
+}
+
+
+ul span{
+    display:block;
+}
+
+#app{
+    width:1200px;
+    margin:0 auto;
+}

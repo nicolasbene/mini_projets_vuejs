@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+      
+        <ul>
+            <li v-for="task of tasks">{{ task.description }}</li>
+        </ul>
+        
+        <h2>Tâches qui sont faites</h2>
+          
+          <ul>
+              <li v-for="task of tasksDone">{{ task.description }}</li>
+          </ul>
+          
+           <h2>Tâches qui ne sont pas faites</h2>
+          
+          <ul>
+              <li v-for="task of tasksNotDone">{{ task.description }}</li>
+          </ul>
+          
+          <h2>Taille</h2>
+          <ul>
+              <li v-for="task of tailleString">
+                  {{ task.description }} : {{task.taille }} caractères.
+              </li>
+          </ul>
+        
+    </div>
+    
+    
+    
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

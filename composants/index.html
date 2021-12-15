@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ liste[1] }}</h1>
+       <ul>
+           <li v-for="value of liste">{{ value }}</li>
+       </ul>
+       
+      
+       <table>
+            <tr>
+               <th>Nom</th>
+               <th>Prénom</th>
+               <th>Téléphone</th>
+           </tr>
+           <tr v-for="contact of contacts">
+               <td v-for="value in contact">{{ value }}</td>
+           </tr>
+       </table>
+        
+      <task-list></task-list>
+        
+    </div>
+    
+    
+    
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
